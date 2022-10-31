@@ -141,75 +141,6 @@ nav .menu {
     display: none;
 }
 
-@media only screen and (max-width: 1120px) {
-    .link {
-        display: flex;
-        position: absolute;
-        top: auto;
-        left: 19%;
-        right: 30%;
-    }
-
-    nav .link ul li {
-        padding: 9px;
-    }
-}
-
-@media only screen and (max-width: 680px) {
-    nav {
-        width: 85%;
-        height: 50px;
-    }
-
-    .link {
-        display: none;
-    }
-
-    header nav .button {
-        display: none;
-    }
-
-    nav .menu {
-        display: flex;
-        position: absolute;
-        cursor: pointer;
-        top: 26px;
-        right: 109px;
-    }
-
-    .link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 100px;
-        left: 66px;
-        width: 78%;
-        border: #ea1538 2px solid;
-        flex-direction: column;
-        height: 81vh;
-        clip-path: circle(0 at center);
-        transition: 1s ease-in-out;
-        -webkit-transition: 1s ease-in-out;
-        -moz-transition: 1s ease-in-out;
-        -ms-transition: 1s ease-in-out;
-        -o-transition: 1s ease-in-out;
-    }
-
-    .imput_checkMenu:checked + .link {
-        clip-path: circle(100% at center);
-    }
-
-    .link ul {
-        display: flex;
-        flex-direction: column;
-        font-size: 2em;
-    }
-
-    .link ul li {
-        margin: 10%;
-    }
-}
 
 /* narbar end */
 
@@ -257,11 +188,11 @@ nav .menu {
     margin-left: 1em;
 }
 
-@media only screen and (max-width: 1120px) {
+/* @media only screen and (max-width: 1120px) {
     .about h1, h4  { 
         display: none;
     } 
-}
+} */
 
 /****************** hero end ************************/
 
@@ -662,3 +593,95 @@ footer{
 }
 
 /************************* footer ************************/
+
+
+/************************* MEDIA QUERYS ************************/
+
+@media only screen and (max-width: 447px){
+
+    .containerSeccion{
+        height: 122vh;
+    }
+
+    .MisConocientos{
+        grid-gap: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .link {
+        display: flex;
+        position: absolute;
+        top: auto;
+        left: 19%;
+        right: 30%;
+    }
+
+    nav .link ul li {
+        padding: 9px;
+    }
+}
+
+@media only screen and (max-width: 790px){
+    .link {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    nav {
+        width: 85%;
+        height: 50px;
+    }
+
+    .link {
+        display: none;
+    }
+
+   .buttonNav {
+        display: none;
+    }
+
+    nav .menu {
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+        top: 26px;
+        right: 109px;
+    }
+
+    .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 100px;
+        left: 66px;
+        width: 78%;
+        border: #ea1538 2px solid;
+        flex-direction: column;
+        height: 81vh;
+        clip-path: circle(0 at center);
+        transition: 1s ease-in-out;
+        -webkit-transition: 1s ease-in-out;
+        -moz-transition: 1s ease-in-out;
+        -ms-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
+    }
+
+    .imput_checkMenu:checked + .link {
+        clip-path: circle(100% at center);
+    }
+
+        
+    .link ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+    }
+
+    .link ul li {
+        margin: 10%;
+    }
+}
