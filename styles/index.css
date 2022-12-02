@@ -201,7 +201,7 @@ nav .menu {
 
 .containerSeccion {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
   
     position: inherit;
     overflow: hidden;
@@ -337,7 +337,7 @@ img {
         url(../asset/img/dia4.jpg);
     background-size: 100% 100%;
     width: 100%;
-    height: 100vh;
+    height: 115vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -597,13 +597,137 @@ footer{
 
 /************************* MEDIA QUERYS ************************/
 
-@media only screen and (max-width: 447px){
+
+@media only screen and (max-width: 810px){
 
     .containerSeccion{
-        height: 122vh;
+        height: 120vh;
     }
 
     .MisConocientos{
+        grid-gap: 0;
+    }
+}
+
+@media only screen and (max-width: 726px){
+
+    .containerSeccion{
+        height: 119vh;
+    }
+
+    .MisConocientos{
+        grid-gap: 0;
+    }
+}
+
+@media only screen and (max-width: 585px){
+
+    .containerSeccion{
+        height: 130vh;
+    }
+
+    .MisConocientos{
+        grid-gap: 0;
+    }
+}
+
+@media only screen and (max-width: 459px){
+
+    .containerSeccion .info{
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 1.2em;
+    }
+
+    #p{
+        font-size: 1em;
+    }
+
+    nav .menu {
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+        top: 26px;
+        right: 49px;
+    }
+
+
+
+    .containerSeccion{
+        height: 128vh;
+    }
+
+    .MisConocientos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+    }
+
+    .proyectos h2{
+        font-size: 1.5em;
+    }
+
+    .proyectos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .grid-proyectos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+    }
+
+}
+
+@media only screen and (max-width: 370px){
+
+    .containerSeccion{
+        height: 140vh;
+    }
+
+    .MisConocientos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+    }
+}
+
+@media only screen and (max-width: 301px){
+
+    .containerSeccion{
+        height: 140vh;
+    }
+
+    .MisConocientos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+    }
+}
+
+@media only screen and (max-width: 301px){
+
+    .containerSeccion{
+        height: 140vh;
+    }
+
+    .MisConocientos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+    }
+}
+
+@media only screen and (max-width: 289px){
+
+    .containerSeccion{
+        height: 135vh;        
+    }
+
+    .MisConocientos{
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 0;
     }
 }
@@ -648,7 +772,7 @@ footer{
         position: absolute;
         cursor: pointer;
         top: 26px;
-        right: 109px;
+        right: 49px;
     }
 
     .link {
