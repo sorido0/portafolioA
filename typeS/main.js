@@ -1,7 +1,22 @@
-console.log("mmg")
+console.log("Hola, para alguna sugerencia e informacion, a mi correo esta en la parte de contacto, gracias por su visita")
 
 const about = document.querySelector(".aboutDiv");
-console.log(about);
+//console.log(about);
+
+
+// const moviviendo = () => {
+//   const position = window.pageYOffset;
+//   if (position > 0) {
+//     navUI.classList.add("navScroll");
+//   } else {
+//     navUI.classList.remove("navScroll");
+//   }
+// };
+
+// moviviendo();
+
+// window.addEventListener("scroll", moviviendo);
+
 
 const blogger = document.getElementById("Blog").addEventListener("click", function(){
   Swal.fire(
@@ -63,6 +78,9 @@ btn.addEventListener('click', () => {
       }
   }
 )
-})
+});
+
+
+
 
 
